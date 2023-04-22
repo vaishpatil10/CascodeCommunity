@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js"></script>
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Career Interest Survey Form</h1>
+    <form id="form" name="myform" action="/action_page.php" onsubmit="return validateForm()" method="post">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text" id="age" name="age" placeholder="Enter your age" />
+        </div>
+        <div class="form-control">
+            <label>
+                Gender
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">Male</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">Female</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed">Other</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="comment">
+                What is your current career? Does it match your dream career?
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" placeholder=" ">
+            </textarea>
+        </div>
+        <div class="form-control">
+            <label for="comment">
+                What are your career goals as of now?
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment1" id="comment1" placeholder=" ">
+            </textarea>
+        </div>
+        
+        <div class="form-control">
+            <label>Fields you are interested in:
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Mathematics</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Agriculture</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">IT Programming</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Law</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Politics</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">Education</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Marketing</input></label>
+            <label for="inp-8">
+                <input type="checkbox"
+                       name="inp">Business</input></label>
+            <label for="inp-9">
+                <input type="checkbox"
+                       name="inp">Journalism</input></label>
+            <label for="inp-10">
+                <input type="checkbox"
+                       name="inp">Psychology</input></label>
+        </div>
+        <div class="form-control">
+            <label>Hobbies:
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-11">
+                <input type="checkbox"
+                       name="inp">Phishing</input></label>
+            <label for="inp-12">
+                <input type="checkbox"
+                       name="inp">Cooking</input></label>
+            <label for="inp-13">
+                <input type="checkbox"
+                       name="inp">Programming</input></label>
+            <label for="inp-14">
+                <input type="checkbox"
+                       name="inp">Gardening</input></label>
+            <label for="inp-15">
+                <input type="checkbox"
+                       name="inp">Painting</input></label>
+            <label for="inp-16">
+                <input type="checkbox"
+                       name="inp">Listening to music</input></label>
+            <label for="inp-17">
+                <input type="checkbox"
+                       name="inp">Mountain Hiking</input></label>
+            <label for="inp-17">
+                <input type="checkbox"
+                       name="inp">Playing Video Games</input></label>
+            
+        </div>
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
